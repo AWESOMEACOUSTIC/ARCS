@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/navbar/Navbar';
 import EventButton from '../components/ui/EventButton';
 import Marquee from '../components/ui/Marquee';
-
+import HoverGallery from '../components/ui/HoverGallery';
 export default function Hero() {
   const marqueeItems1 = ['EXCITING PRIZE POOL', 'INTERNATIONAL SPEAKERS', '100xFun', 'Bombastic', 'EXCITING PRIZE POOL', 'INTERNATIONAL SPEAKERS', '100xFun', 'Bombastic'];
   const marqueeItems2 = ['HackBattle', 'Cicada', 'HackBattle', 'Cicada', 'HackBattle', 'Cicada', 'HackBattle', 'Cicada', 'HackBattle', 'Cicada', 'HackBattle', 'Cicada'];
@@ -10,14 +10,14 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen bg-gradient-to-b from-[#000016] to-[#0a0a1f] text-white overflow-hidden">
       <Navbar />
-      <main className="container mx-auto flex flex-col items-center justify-center text-center pt-32 2xl:pt-12">
-        <h1 className="text-7xl sm:text-[9em] font-[rugen] uppercase">
-          ARCS
-        </h1>
+      <main className="container mx-auto flex flex-col items-center justify-center text-center pt-32 2xl:pt-0">
+        <div className="w-[30vw] relative h-[9rem] md:h-[12rem] lg:h-[14rem]">
+          <HoverGallery />
+        </div>
         <p className="mt-2 text-[1.4em] 2xl:text-[2em] sm:text-4xl font-[rugen] uppercase leading-[1.54em] tracking-wider">
           Our flagship events <br /> are <span className="text-gradient">Back</span>
         </p>
-        <div className="mt-12 flex flex-col sm:flex-row gap-10">
+        <div className="mt-8 flex flex-col sm:flex-row gap-10">
           <EventButton sectionId="hackbattle">Hackbattle</EventButton>
           <EventButton sectionId="cicada">Cicada</EventButton>
         </div>
