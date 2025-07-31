@@ -1,35 +1,35 @@
 import React from 'react';
+import arcsImage from '../assets/images/arcs-image.png'; 
 
-export default function About() {
+const AboutSection = () => {
   return (
-    <section id="about" className="min-h-screen bg-gradient-to-b from-[#0a0a1f] to-[#1a1a2e] text-white flex items-center justify-center px-4">
-      <div className="container mx-auto text-center">
-        <h2 className="text-5xl sm:text-7xl font-[rugen] uppercase mb-8">About ARCS</h2>
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xl sm:text-2xl mb-6 leading-relaxed">
-            ARCS (Association for Research in Computer Science) is the premier tech society of our institution, 
-            dedicated to fostering innovation and excellence in computer science.
+    <section id="about" className="bg-[#01061B] text-white py-10">
+      <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center md:space-x-12">
+        <div className="w-full md:w-1/2 mt-8 md:mt-0">
+          <h2 className="text-4xl md:text-5xl font-[rugen]">What is ARCS?</h2>
+          <p className="mt-6 text-lg text-gray-300">
+            Join us for this year's edition of ARCS, the prestigious flagship event brought to you by IEEE Computer Society. Over three captivating days, immerse yourself in the realm of technology's finest, as we pave the way for novel ideas.
           </p>
-          <p className="text-lg sm:text-xl mb-8 opacity-90">
-            We organize cutting-edge events, workshops, and competitions that challenge minds and create 
-            the next generation of tech leaders. Join us in our mission to revolutionize the digital world.
+          <p className="mt-4 text-lg text-gray-300">
+            ARCS'24 is the ultimate celebration of technology's transformative power. This grand event unites visionaries, pioneers, and enthusiasts alike, fostering a dynamic platform for innovation to flourish.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-purple-900/30 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Innovation</h3>
-              <p>Pushing boundaries with cutting-edge technology and creative solutions.</p>
-            </div>
-            <div className="bg-purple-900/30 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Community</h3>
-              <p>Building a strong network of passionate tech enthusiasts and professionals.</p>
-            </div>
-            <div className="bg-purple-900/30 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Excellence</h3>
-              <p>Striving for the highest standards in everything we do and learn.</p>
-            </div>
+        </div>
+        <div className="w-full h-full md:w-1/2 overflow-hidden">
+          <div className="w-full h-80 md:h-full relative">
+            <img
+              src={arcsImage}
+              alt="ARCS Event"
+              className="w-full h-full object-cover mix-blend-color-dodge"
+              style={{
+                clipPath: 'path("M17% 0 L100% 0 L100% 100% L17% 100% C0 50% 17% 0 17% 0 Z")',
+                boxShadow: 'inset 15px 4px 70px rgba(1,6,27,1)'
+              }}
+            />
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default AboutSection;

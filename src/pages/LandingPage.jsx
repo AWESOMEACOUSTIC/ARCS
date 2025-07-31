@@ -3,7 +3,7 @@ import Navbar from '../components/navbar/Navbar';
 import EventButton from '../components/ui/EventButton';
 import Marquee from '../components/ui/Marquee';
 import HoverGallery from '../components/ui/HoverGallery';
-export default function Hero() {
+export default function LandingPage() {
   const marqueeItems1 = ['EXCITING PRIZE POOL', 'INTERNATIONAL SPEAKERS', '100xFun', 'Bombastic', 'EXCITING PRIZE POOL', 'INTERNATIONAL SPEAKERS', '100xFun', 'Bombastic'];
   const marqueeItems2 = ['HackBattle', 'Cicada', 'HackBattle', 'Cicada', 'HackBattle', 'Cicada', 'HackBattle', 'Cicada', 'HackBattle', 'Cicada', 'HackBattle', 'Cicada'];
 
