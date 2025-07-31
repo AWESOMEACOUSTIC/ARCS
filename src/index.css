@@ -13,11 +13,7 @@
   --background-gradient: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
 }
 
-body {
-  font-family: 'Orbitron', monospace;
-  background: var(--background-gradient);
-  background-attachment: fixed;
-}
+
 
 @layer utilities {
   .bg-background {
@@ -29,18 +25,5 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  
-  .animate-marquee {
-    animation: marquee 20s linear infinite;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
   }
 }
