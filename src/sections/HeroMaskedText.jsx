@@ -2,20 +2,23 @@ import React from 'react';
 import heroImage from '../assets/images/maskedImage.png'; 
 
 const HeroSection = () => {
+  const heroTextLines = [
+    "TWO CREATIVE",
+    "EVENTS FOR THE", 
+    "NEXT WAVE OF",
+    "LOCAL TALENT"
+  ];
+
   return (
-    <section className="bg-[#0D0F19] text-white py-16">
+    <section className="bg-[#01061B] text-white py-16">
       <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center md:space-x-12">
         {/* Text Column */}
         <div className="w-full md:w-1/2 space-y-4 text-center md:text-left font-[rugen]">
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-            TWO CREATIVE EVENTS
-          </h1>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-            FOR THE NEXT WAVE
-          </h1>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-            OF LOCAL TALENT
-          </h1>
+          {heroTextLines.map((line, index) => (
+            <h1 key={index} className="text-4xl md:text-5xl text-center font-extrabold leading-tight">
+              {line}
+            </h1>
+          ))}
         </div>
 
         {/* Image Column */}
