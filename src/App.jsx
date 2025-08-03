@@ -6,6 +6,7 @@ import Contact from './sections/Contact'
 import HackBattle from './sections/HackBattle'
 import Cicada from './sections/Cicada'
 import HeroMaskedText from './sections/HeroMaskedText'
+import SponsorsSection from './sections/Sponsor'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <LandingPage/>
       <About />
       <HeroMaskedText/>
+      <SponsorsSection />
       <FAQ />
       <Contact />
       <HackBattle />
