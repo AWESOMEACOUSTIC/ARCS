@@ -1,4 +1,3 @@
-import React from 'react'
 import LandingPage from './pages/LandingPage'
 import About from './sections/About'
 import FAQ from './sections/FAQ'
